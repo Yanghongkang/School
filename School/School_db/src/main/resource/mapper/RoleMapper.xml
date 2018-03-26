@@ -3,7 +3,7 @@
 <mapper namespace="cn.sh.db.mapper.RoleMapper">
 	<resultMap id="roleResult" type="cn.sh.dto.Role">
 		<id property="id" column="ID" />
-		<result property="roleName" column="parent_id" />
+		<result property="roleName" column="role_name" />
 		<result property="remark" column="remark" />
 		<result property="islock" column="is_lock" />
 		<result property="seq" column="seq" />

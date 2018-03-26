@@ -21,6 +21,10 @@ public interface ResourceMapper {
 	@ResultMap("cn.sh.db.mapper.ResourceMapper.resourceResult")
 	List<Resource> queryResourceListByTypeAndParent(Resource resource) throws Exception;
 
+	@Select("select * from school_resource where id=#{resourceId}")
+	@ResultMap("cn.sh.db.mapper.ResourceMapper.resourceResult")
+	Resource queryResourceById(Long resourceId) throws Exception;
+
 	@Insert("insert into school_resource (parent_id,resource_name,resource_type,create_date,update_date,url,seq) values"
 			+ "(#{parentId},#{resourceName},#{resourceType},#{createDate},#{updateDate},#{url},#{seq})")
 	boolean saveResource(Resource resource) throws Exception;
@@ -35,6 +39,7 @@ public interface ResourceMapper {
 	 * @return
 	 * @throws Exception
 	 */
-	@Select("SELECT * FROM school_resource r LEFT JOIN school_role_resource rr ON rr.role_id = r.id WHERE rr.role_id = #{roleId}")
+	@Select("SELECT r.* FROM school_resource r LEFT JOIN school_role_resource rr ON rr.resource_id = r.id WHERE rr.role_id = #{roleId}")
+	@ResultMap("cn.sh.db.mapper.ResourceMapper.resourceResult")
 	List<Resource> queryResourceByRole(@Param("roleId") Long roleId) throws Exception;
 }

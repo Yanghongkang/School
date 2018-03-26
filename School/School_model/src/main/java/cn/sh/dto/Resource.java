@@ -104,4 +104,11 @@ public class Resource extends PageRetDto implements Serializable {
 		this.updateDate = updateDate;
 	}
 
+	@Override
+	public String toString() {
+		return "Resource [id=" + id + ", parentId=" + parentId + ", resourceName=" + resourceName + ", resourceType="
+				+ resourceType + ", url=" + url + ", seq=" + seq + ", islock=" + islock + ", createDate=" + createDate
+				+ ", updateDate=" + updateDate + "]";
+	}
+
 }

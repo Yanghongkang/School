@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
@@ -26,7 +27,7 @@ public interface RoleMapper {
 	 * @throws Exception
 	 */
 	@Select("select * from school_role where id=#{id}")
-	Role queryRoleById(Long id) throws Exception;
+	List<Role> queryRoleById(Long id) throws Exception;
 
 	@Insert("insert into school_role(role_name,create_date,update_date,remark,islock,seq)"
 			+ "values(#{roleName},#{createDate},#{updateDate},#{remark},#{islock},#{seq})")
@@ -70,7 +71,8 @@ public interface RoleMapper {
 	 * @return
 	 * @throws Exception
 	 */
-	@Select("SELECT * FROM school_role r LEFT JOIN school_user_role ur ON ur.role_id = r.id WHERE ur.user_id = #{userId}")
-	List<Role> queryRoleByUser(@Param("userId") Long userId) throws Exception;
+	@Select("SELECT r.* FROM school_role r LEFT JOIN school_user_role ur ON ur.role_id = r.id WHERE ur.user_id = #{userId}")
+	@ResultMap("cn.sh.db.mapper.RoleMapper.roleResult")
+	List<Role> queryRoleByUserId(@Param("userId") Long userId) throws Exception;
 
 }

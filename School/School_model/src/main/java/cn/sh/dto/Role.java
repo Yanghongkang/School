@@ -86,4 +86,10 @@ public class Role extends PageRetDto implements Serializable {
 		this.remark = remark;
 	}
 
+	@Override
+	public String toString() {
+		return "Role [id=" + id + ", roleName=" + roleName + ", createDate=" + createDate + ", updateDate=" + updateDate
+				+ ", remark=" + remark + ", islock=" + islock + ", seq=" + seq + ", resourceList=" + resourceList + "]";
+	}
+
 }
