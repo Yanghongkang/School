@@ -1,0 +1,121 @@
+2018-03-23 12:29:18,173 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 42891 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 12:29:18,185 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 12:29:18,186 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 12:29:22,127 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.208 seconds (JVM running for 4.713)
+2018-03-23 12:29:33,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,user_name,user_password,email,we_chat,common_phone,urgent_phone,update_date,create_date,lost_login_date,dingtalk from school_user where 1=1 and user_name = ? 
+2018-03-23 12:29:33,440 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: asa(String)
+2018-03-23 12:29:33,451 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2018-03-23 12:31:07,682 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 42904 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 12:31:07,692 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 12:31:07,692 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 12:31:09,287 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 12:31:09,288 INFO (DruidConfiguration.java:66)- root
+2018-03-23 12:31:09,288 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 12:31:09,288 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 12:31:11,479 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.029 seconds (JVM running for 4.486)
+2018-03-23 12:31:33,605 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,user_name,user_password,email,we_chat,common_phone,urgent_phone,update_date,create_date,lost_login_date,dingtalk from school_user where 1=1 and user_name = ? 
+2018-03-23 12:31:33,826 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: asa(String)
+2018-03-23 12:31:33,843 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2018-03-23 12:32:27,619 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,user_name,user_password,email,we_chat,common_phone,urgent_phone,update_date,create_date,lost_login_date,dingtalk from school_user where 1=1 and user_name = ? 
+2018-03-23 12:32:27,620 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: asa(String)
+2018-03-23 12:32:27,621 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2018-03-23 12:32:28,047 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,user_name,user_password,email,we_chat,common_phone,urgent_phone,update_date,create_date,lost_login_date,dingtalk from school_user where 1=1 and user_name = ? 
+2018-03-23 12:32:28,048 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: asa(String)
+2018-03-23 12:32:28,050 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2018-03-23 12:33:27,013 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 42920 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 12:33:27,016 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 12:33:27,016 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 12:33:28,843 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 12:33:28,843 INFO (DruidConfiguration.java:66)- root
+2018-03-23 12:33:28,844 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 12:33:28,844 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 12:33:31,093 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.354 seconds (JVM running for 4.848)
+2018-03-23 12:38:44,946 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 42960 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 12:38:44,948 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 12:38:44,948 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 12:38:46,755 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 12:38:46,756 INFO (DruidConfiguration.java:66)- root
+2018-03-23 12:38:46,756 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 12:38:46,756 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 12:38:48,954 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.263 seconds (JVM running for 4.72)
+2018-03-23 12:41:48,574 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43000 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 12:41:48,577 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 12:41:48,578 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 12:41:50,395 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/1p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 12:41:50,395 INFO (DruidConfiguration.java:66)- root
+2018-03-23 12:41:50,396 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 12:41:50,396 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 12:43:02,586 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43007 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 12:43:02,589 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 12:43:02,589 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 12:43:04,397 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 12:43:04,398 INFO (DruidConfiguration.java:66)- root
+2018-03-23 12:43:04,398 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 12:43:04,398 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 12:43:13,593 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43008 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 12:43:13,597 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 12:43:13,597 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 12:43:15,423 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 12:43:15,423 INFO (DruidConfiguration.java:66)- root
+2018-03-23 12:43:15,424 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 12:43:15,424 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 12:43:17,579 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.247 seconds (JVM running for 4.774)
+2018-03-23 13:10:26,473 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43162 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 13:10:26,477 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 13:10:26,477 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 13:10:28,565 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 13:10:28,565 INFO (DruidConfiguration.java:66)- root
+2018-03-23 13:10:28,566 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 13:10:28,566 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 13:12:01,884 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43180 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 13:12:01,887 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 13:12:01,887 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 13:12:03,827 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 13:12:03,828 INFO (DruidConfiguration.java:66)- root
+2018-03-23 13:12:03,828 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 13:12:03,828 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 13:12:20,069 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43181 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 13:12:20,072 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 13:12:20,073 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 13:12:21,954 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 13:12:21,955 INFO (DruidConfiguration.java:66)- root
+2018-03-23 13:12:21,956 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 13:12:21,956 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 13:14:09,551 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43185 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 13:14:09,563 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 13:14:09,564 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 13:14:11,802 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 13:14:11,803 INFO (DruidConfiguration.java:66)- root
+2018-03-23 13:14:11,804 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 13:14:11,804 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 13:15:42,050 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43190 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 13:15:42,062 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 13:15:42,062 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 13:15:44,047 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 13:15:44,048 INFO (DruidConfiguration.java:66)- root
+2018-03-23 13:15:44,048 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 13:15:44,048 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 13:15:46,361 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.574 seconds (JVM running for 5.087)
+2018-03-23 13:16:05,324 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43192 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 13:16:05,327 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 13:16:05,328 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 13:16:07,240 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 13:16:07,240 INFO (DruidConfiguration.java:66)- root
+2018-03-23 13:16:07,241 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 13:16:07,241 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 13:16:22,437 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43193 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 13:16:22,440 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 13:16:22,440 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 13:16:24,374 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 13:16:24,375 INFO (DruidConfiguration.java:66)- root
+2018-03-23 13:16:24,375 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 13:16:24,375 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 13:16:26,640 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.475 seconds (JVM running for 5.002)
+2018-03-23 14:09:04,813 INFO (StartupInfoLogger.java:48)- Starting WebSiteApp on localhost with PID 43540 (/Users/adminyhk/Documents/book/School/School_website/target/classes started by adminyhk in /Users/adminyhk/Documents/book/School/School_website)
+2018-03-23 14:09:04,816 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-23 14:09:04,816 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-23 14:09:06,780 INFO (DruidConfiguration.java:64)- jdbc:mysql://127.0.0.1:3306/p2p?useUnicode=true&characterEncoding=utf8&useSSL=true
+2018-03-23 14:09:06,781 INFO (DruidConfiguration.java:66)- root
+2018-03-23 14:09:06,781 INFO (DruidConfiguration.java:68)- admin123
+2018-03-23 14:09:06,781 INFO (DruidConfiguration.java:70)- com.mysql.jdbc.Driver
+2018-03-23 14:09:09,111 INFO (StartupInfoLogger.java:57)- Started WebSiteApp in 4.569 seconds (JVM running for 5.117)

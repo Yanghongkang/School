@@ -1,0 +1,13 @@
+2018-03-24 17:55:13,811 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 47697 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-24 17:55:13,812 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-24 17:55:13,812 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-24 17:55:17,236 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.669 seconds (JVM running for 4.445)
+2018-03-24 17:55:17,307 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from school_user where user_name=? 
+2018-03-24 17:55:17,327 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Admin(String)
+2018-03-24 17:55:17,341 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-24 17:55:17,343 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM school_role r LEFT JOIN school_user_role ur ON ur.role_id = r.id WHERE ur.user_id = ? 
+2018-03-24 17:55:17,344 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(Long)
+2018-03-24 17:55:17,347 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-03-24 23:21:36,611 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 48283 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-24 23:21:36,611 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-24 23:21:40,250 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.878 seconds (JVM running for 4.58)

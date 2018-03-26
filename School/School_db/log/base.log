@@ -1,0 +1,38 @@
+2018-03-26 08:30:54,892 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50181 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:30:54,893 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:30:54,894 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:30:58,388 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.739 seconds (JVM running for 4.587)
+2018-03-26 08:31:35,078 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50185 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:31:35,079 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:31:35,079 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:31:38,224 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.347 seconds (JVM running for 3.98)
+2018-03-26 08:32:40,939 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50186 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:32:40,940 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:32:40,940 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:32:44,224 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.493 seconds (JVM running for 4.219)
+2018-03-26 08:34:00,449 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50190 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:34:00,450 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:34:00,450 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:34:03,626 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.369 seconds (JVM running for 4.011)
+2018-03-26 08:34:30,841 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50197 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:34:30,841 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:34:30,841 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:34:34,001 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.36 seconds (JVM running for 3.99)
+2018-03-26 08:35:52,169 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50210 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:35:52,170 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:35:52,170 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:35:55,591 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.643 seconds (JVM running for 4.31)
+2018-03-26 08:37:27,392 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50213 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:37:27,392 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:37:27,393 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:37:30,792 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.637 seconds (JVM running for 4.303)
+2018-03-26 08:38:43,843 INFO (StartupInfoLogger.java:48)- Starting AppTest on localhost with PID 50217 (started by adminyhk in /Users/adminyhk/Documents/book/School/School_db)
+2018-03-26 08:38:43,843 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 08:38:43,843 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-26 08:38:47,097 INFO (StartupInfoLogger.java:57)- Started AppTest in 3.451 seconds (JVM running for 4.086)
+2018-03-26 08:38:47,169 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from school_user where user_name=? 
+2018-03-26 08:38:47,190 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Admin(String)
+2018-03-26 08:38:47,205 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-26 08:38:47,208 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM school_role r LEFT JOIN school_user_role ur ON ur.role_id = r.id WHERE ur.user_id = ? 
+2018-03-26 08:38:47,209 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(Long)
+2018-03-26 08:38:47,212 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
