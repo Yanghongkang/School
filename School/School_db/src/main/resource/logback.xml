@@ -31,7 +31,7 @@
 	<logger name="cn.sh" level="debug">
 		<appender-ref ref="baselog" />
 	</logger>
-	<logger name="cn.sh" level="info">
+	<logger name="cn.sh" level="debug">
 		<appender-ref ref="STDOUT" />
 	</logger>
 </configuration>

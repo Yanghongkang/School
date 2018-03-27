@@ -41,11 +41,16 @@ public class User extends PageRetDto implements Serializable {
 	private Date lostLoginDate;
 	private String islock;
 
-	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "school_user_role", joinColumns = {
-			@JoinColumn(name = "user_id", referencedColumnName = "ID") }, inverseJoinColumns = {
-					@JoinColumn(name = "role_id", referencedColumnName = "ID") })
 	private List<Role> roelList;
+	private List<Resource> resourceList;
+
+	public List<Resource> getResourceList() {
+		return resourceList;
+	}
+
+	public void setResourceList(List<Resource> resourceList) {
+		this.resourceList = resourceList;
+	}
 
 	public Long getId() {
 		return id;

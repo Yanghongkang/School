@@ -1,4 +1,4 @@
-package cn.sh.website.service;
+package cn.sh.website.service.system;
 
 import java.util.List;
 
@@ -12,13 +12,22 @@ public interface UserService {
 	public static final String NULOCK = "0";
 
 	/**
-	 * 
+	 * 登录
 	 * @param userName
 	 * @param userPassword
 	 * @return
 	 * @throws Exception
 	 */
 	public User login(String userName, String userPassword) throws Exception;
+	
+	/**
+	 * 首页初始化
+	 * @param userName
+	 * @param userPassword
+	 * @return
+	 * @throws Exception
+	 */
+	public User initIndex(Long userId) throws Exception;
 
 	/**
 	 * 

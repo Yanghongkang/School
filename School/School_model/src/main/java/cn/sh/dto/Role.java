@@ -32,10 +32,6 @@ public class Role extends PageRetDto implements Serializable {
 	private String islock;
 	private Long seq;
 
-	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "school_role_resource", joinColumns = {
-			@JoinColumn(name = "role_id", referencedColumnName = "ID") }, inverseJoinColumns = {
-					@JoinColumn(name = "resource_id", referencedColumnName = "ID") })
 	private List<Resource> resourceList;
 
 	public String getIslock() {
