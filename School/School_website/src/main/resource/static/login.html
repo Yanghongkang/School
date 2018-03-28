@@ -4,12 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AdminYhk</title>
-<link rel="stylesheet" href="/css/zui.min.css">
-<script src="/lib/jquery/jquery.js"></script>
-<script src="/js/zui.min.js"></script>
+<link rel="stylesheet" href="./css/zui.min.css">
+<script src="./lib/jquery/jquery.js"></script>
+<script src=".//js/zui.min.js"></script>
 </head>
 <body>
-	<nav class="navbar" role="navigation" style="margin-bottom: 0px">
+	<nav class="navbar" role="navigation" style="margin-bottom: 0px;z-index:777" >
 		<div class="container-fluid">
 			<!-- 导航头部 -->
 			<div class="navbar-header">
@@ -19,7 +19,7 @@
 			<!-- 导航项目 -->
 			<div class="collapse navbar-collapse navbar-collapse-example">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="your/nice/url">忘记密码</a></li>
+					<li><a href="www.baidu.com">忘记密码</a></li>
 				</ul>
 			</div>
 			<!-- END .navbar-collapse -->
@@ -31,7 +31,7 @@
 		</p>
 	</div>
 	<!-- 对话框HTML -->
-	<div class="modal fade" id="myModal">
+	<div class="modal fade" id="myModal" style="z-index:-9999">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -69,20 +69,20 @@
 			$('#myModal').modal({
 				keyboard : false,
 				show : true,
-				backdrop : false
+				backdrop : false	
 			})
 			$('.btn').on('click', function() {
 				$.ajax({
 					type : "POST",
 					dataType : "json",
-					url : "/user/login.do",
+					url : "./user/login.do",
 					data : $('.form-horizontal').serialize(),
 					success : function(result) {
 						console.log(result);
 						if (result.errMsg != null) {
 							alert(result.errMsg);
 						} else {
-							window.location.href = "/index.html";
+							window.location.href = "./index.html";
 						}
 					},
 					error : function() {
