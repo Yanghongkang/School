@@ -2,6 +2,7 @@ package cn.sh.dto;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +14,7 @@ import cn.sh.dto.common.PageRetDto;
 
 @Entity
 @Table(name = "school_resource")
-public class Resource extends PageRetDto implements Serializable {
+public class Resource extends PageRetDto implements Serializable, Cloneable {
 
 	/**
 	 * 
@@ -31,6 +32,8 @@ public class Resource extends PageRetDto implements Serializable {
 	private String islock;
 	private Date createDate;
 	private Date updateDate;
+
+	private List<Resource> childResource;
 
 	public Long getId() {
 		return id;
@@ -102,6 +105,25 @@ public class Resource extends PageRetDto implements Serializable {
 
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
+	}
+
+	public List<Resource> getChildResource() {
+		return childResource;
+	}
+
+	public void setChildResource(List<Resource> childResource) {
+		this.childResource = childResource;
+	}
+
+	@Override
+	public Resource clone() {
+		Resource res = null;
+		try {
+			res = (Resource) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return res;
 	}
 
 	@Override

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -58,13 +59,31 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User initIndex(Long userId) throws Exception {
-		Set<Resource> resource = new HashSet<Resource>();
+		System.out.println(System.currentTimeMillis());
+		Set<Resource> parentresource = new HashSet<Resource>();
+		Set<Resource> parentChild = new HashSet<Resource>();
 		User user = usermapper.queryUserById(userId);
 		user.setRoelList(roleMapper.queryRoleByUserId(userId));
 		for (Role role : user.getRoelList()) {
-			resource.addAll(resourceMapper.queryResourceByRole(role.getId()));
+			parentChild = new HashSet<>(resourceMapper.queryResourceByRole(role.getId()));
+			for (Resource resource2 : parentChild) {
+				if (resource2.getParentId() == 0l) {
+					parentresource.add(resource2);
+				}
+			}
+			for (Resource parent : parentresource) {
+				parentChild.remove(parent);
+				for (Resource child : parentChild) {
+					if (parent.getId() == child.getParentId()) {
+						if(parent.getChildResource()==null)
+							parent.setChildResource(new ArrayList<>());
+						parent.getChildResource().add(child);
+					}
+				}
+			}
 		}
-		user.setResourceList(new ArrayList<>(resource));
+		user.setResourceList(new ArrayList<>(parentresource));
+		System.out.println(System.currentTimeMillis());
 		return user;
 	}
 
