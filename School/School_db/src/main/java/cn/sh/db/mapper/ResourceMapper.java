@@ -41,5 +41,5 @@ public interface ResourceMapper {
 	 */
 	@Select("SELECT r.* FROM school_resource r LEFT JOIN school_role_resource rr ON rr.resource_id = r.id WHERE rr.role_id = #{roleId}")
 	@ResultMap("cn.sh.db.mapper.ResourceMapper.resourceResult")
-	List<Resource> queryResourceByRole(@Param("roleId") Long roleId) throws Exception;
+	List<Resource> queryResourceByRole(Long roleId) throws Exception;
 }

@@ -19,14 +19,13 @@ import org.slf4j.LoggerFactory;
 
 import cn.sh.dto.User;
 
-//@WebFilter(filterName = "sessionFilter", urlPatterns = { "*.html", "*.do" })
+@WebFilter(filterName = "sessionFilter", urlPatterns = { "*.html", "*.do" })
 public class SessionFilter implements Filter {
 	private final Logger logger = LoggerFactory.getLogger(SessionFilter.class);
 	private final static String LOGIN_USER = "login_user";
 	Set<String> accessUrl = new HashSet<String>();
 	{
 		accessUrl.add("/login.html");
-		accessUrl.add("/index.html");
 		accessUrl.add("/user/login.do");
 	}
 
@@ -48,7 +47,7 @@ public class SessionFilter implements Filter {
 			HttpServletRequest hRequest = (HttpServletRequest) request;
 			User loginUser = (User) hRequest.getSession().getAttribute(LOGIN_USER);
 			if (loginUser == null) {
-				((HttpServletResponse) response).sendRedirect(contextPath + "/login.html");
+				((HttpServletResponse) response).sendRedirect(contextPath + "./login.html");
 			} else {
 				chain.doFilter(request, response);
 			}

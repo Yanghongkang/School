@@ -6,8 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import cn.sh.db.mapper.ResourceMapper;
 import cn.sh.db.mapper.RoleMapper;
 import cn.sh.db.mapper.UserMapper;
+import cn.sh.dto.Resource;
+import cn.sh.dto.Role;
+import cn.sh.dto.User;
 import junit.framework.TestCase;
 
 /**
@@ -21,6 +25,8 @@ public class AppTest extends TestCase {
 
 	@Autowired
 	private RoleMapper roleMapper;
+	@Autowired
+	private ResourceMapper resourceMapper;
 
 	@Test
 	public void testfindAllUsers() throws Exception {
@@ -36,9 +42,17 @@ public class AppTest extends TestCase {
 		// admin.setAge(23l);
 		// admin.setCommonPhone("13838383823");
 		// userMapper.saveUser(admin);
-		//User uu = userMapper.queryUserByName("Admin");
+		User uu = userMapper.queryUserByName("Admin");
 
-		//userMapper.queryRoleByUser(uu.getId());
+		
+		for (Role iterable_element : roleMapper.queryRoleByUserId(uu.getId())) {
+			System.out.println(iterable_element.toString());
+			for (Resource aa : resourceMapper.queryResourceByRole(iterable_element.getId())) {
+				System.out.println(aa);
+			}
+			
+		}
+//		
 //		List<Role> aa = roleMapper.queryRoleList(new Role());
 //		for (Role role : aa) {
 //			System.out.println(role.getId());

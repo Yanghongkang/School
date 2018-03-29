@@ -14,7 +14,7 @@ import cn.sh.dto.common.PageRetDto;
 
 @Entity
 @Table(name = "school_resource")
-public class Resource extends PageRetDto implements Serializable, Cloneable {
+public class Resource extends CommonRetDto implements Serializable, Cloneable {
 
 	/**
 	 * 

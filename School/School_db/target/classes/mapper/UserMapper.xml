@@ -23,7 +23,7 @@
 	</sql>
 
 	<select id="queryUserByPage" resultMap="userResult"
-		parameterType="cn.sh.dto.User">
+		parameterType="Map">
 		select
 		<include refid="Base_Column_List"></include>
 		from school_user
@@ -31,11 +31,12 @@
 		<if test="userName != null and userName!=''">
 			and user_name = #{userName}
 		</if>
-		limit #{start}, #{size}"；
+		limit #{start}, #{size}
 	</select>
 
-	<select id="queryUserCount" resultMap="userResult" parameterType="cn.sh.dto.User">
-		select (1) form from school_user
+	<select id="queryUserCount" resultMap="userResult"
+		parameterType="cn.sh.dto.User">
+		select count(1) form from school_user
 		where 1=1
 		<if test="userName != null and userName!=''">
 			and user_name = #{userName}

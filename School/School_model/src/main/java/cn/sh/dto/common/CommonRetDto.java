@@ -29,4 +29,14 @@ public class CommonRetDto implements Serializable {
 		this.errMsg = errMsg;
 	}
 
+	public CommonRetDto(String errCode, String errMsg) {
+		super();
+		this.errCode = errCode;
+		this.errMsg = errMsg;
+	}
+
+	public CommonRetDto() {
+		super();
+	}
+
 }

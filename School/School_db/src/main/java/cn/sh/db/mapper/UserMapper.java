@@ -16,7 +16,6 @@ import cn.sh.dto.User;
 @Mapper
 public interface UserMapper {
 
-
 	Long queryUserCount(User user) throws Exception;
 
 	List<User> queryUserByPage(Map<String, Object> map) throws Exception;
@@ -28,6 +27,7 @@ public interface UserMapper {
 	 * @throws Exception
 	 */
 	@Select("select * from school_user where id=#{id}")
+	@ResultMap("cn.sh.db.mapper.UserMapper.userResult")
 	User queryUserById(Long id) throws Exception;
 
 	/**
@@ -52,7 +52,5 @@ public interface UserMapper {
 
 	@Insert("insert into school_user_role(user_id,role_id) values (#{userId},#{roleId})")
 	boolean saveUserRole(@Param("userId") Long userId, @Param("roleId") Long roleId) throws Exception;
-
-	
 
 }

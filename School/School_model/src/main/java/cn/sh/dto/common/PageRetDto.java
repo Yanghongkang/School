@@ -1,52 +1,55 @@
 package cn.sh.dto.common;
 
 import java.io.Serializable;
+import java.util.List;
 
-public class PageRetDto extends CommonRetDto implements Serializable {
+public class PageRetDto<T> implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private Long count;
+	private String result;
 
-	private Long pageCount;
+	private PagerRetDto pagerdto;
+	private String message;
+	private List<T> data;
 
-	private Long startPage;
-
-	private Long pageSize;
-
-	public Long getCount() {
-		return count;
+	public PageRetDto() {
+		super();
 	}
 
-	public void setCount(Long count) {
-		this.count = count;
+	public String getResult() {
+		return result;
 	}
 
-	public Long getPageCount() {
-		return pageCount;
+	public void setResult(String result) {
+		this.result = result;
 	}
 
-	public void setPageCount(Long pageCount) {
-		this.pageCount = pageCount;
+	public PagerRetDto getPagerdto() {
+		return pagerdto;
 	}
 
-	public Long getStartPage() {
-		return startPage;
+	public void setPagerdto(PagerRetDto pagerdto) {
+		this.pagerdto = pagerdto;
 	}
 
-	public void setStartPage(Long startPage) {
-		this.startPage = startPage;
+	public String getMessage() {
+		return message;
 	}
 
-	public Long getPageSize() {
-		return pageSize;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
-	public void setPageSize(Long pageSize) {
-		this.pageSize = pageSize;
+	public List<T> getData() {
+		return data;
+	}
+
+	public void setData(List<T> data) {
+		this.data = data;
 	}
 
 }

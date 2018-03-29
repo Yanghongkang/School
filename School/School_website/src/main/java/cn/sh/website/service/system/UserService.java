@@ -4,6 +4,8 @@ import java.util.List;
 
 import cn.sh.dto.User;
 import cn.sh.dto.common.CommonRetDto;
+import cn.sh.dto.common.PageRetDto;
+import cn.sh.dto.common.PagerRetDto;
 
 public interface UserService {
 
@@ -13,15 +15,17 @@ public interface UserService {
 
 	/**
 	 * 登录
+	 * 
 	 * @param userName
 	 * @param userPassword
 	 * @return
 	 * @throws Exception
 	 */
 	public User login(String userName, String userPassword) throws Exception;
-	
+
 	/**
 	 * 首页初始化
+	 * 
 	 * @param userName
 	 * @param userPassword
 	 * @return
@@ -45,15 +49,6 @@ public interface UserService {
 	 * @return
 	 * @throws Exception
 	 */
-	public List<User> userPage(User user, int page, int count) throws Exception;
+	public PageRetDto<User> userPage(User user, PagerRetDto pager) throws Exception;
 
-	/**
-	 * 
-	 * @param user
-	 * @param page
-	 * @param count
-	 * @return
-	 * @throws Exception
-	 */
-	public Long userPageCount(User user) throws Exception;
 }

@@ -18,7 +18,7 @@ import cn.sh.dto.common.PageRetDto;
 
 @Entity
 @Table(name = "school_user")
-public class User extends PageRetDto implements Serializable {
+public class User extends CommonRetDto implements Serializable {
 
 	/**
 	 * 

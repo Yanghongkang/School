@@ -4,20 +4,16 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import cn.sh.dto.common.PageRetDto;
+import cn.sh.dto.common.CommonRetDto;
 
 @Entity
 @Table(name = "school_role")
-public class Role extends PageRetDto implements Serializable {
+public class Role extends CommonRetDto implements Serializable {
 	/**
 	 * 
 	 */

@@ -3,9 +3,11 @@ package cn.sh.website.service.system.impl;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,8 @@ import cn.sh.dto.Resource;
 import cn.sh.dto.Role;
 import cn.sh.dto.User;
 import cn.sh.dto.common.CommonRetDto;
+import cn.sh.dto.common.PageRetDto;
+import cn.sh.dto.common.PagerRetDto;
 import cn.sh.website.service.system.UserService;
 import cn.sh.website.util.MD5Util;
 
@@ -75,7 +79,7 @@ public class UserServiceImpl implements UserService {
 				parentChild.remove(parent);
 				for (Resource child : parentChild) {
 					if (parent.getId() == child.getParentId()) {
-						if(parent.getChildResource()==null)
+						if (parent.getChildResource() == null)
 							parent.setChildResource(new ArrayList<>());
 						parent.getChildResource().add(child);
 					}
@@ -88,9 +92,19 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public List<User> userPage(User user, int page, int count) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+	public PageRetDto<User> userPage(User user, PagerRetDto pager) throws Exception {
+		Map<String, Object> map = new HashMap<>();
+		map.put("start", pager.getPage());
+		map.put("size", pager.getRecPerPage());
+		if (user.getUserName() != null && user.getUserName() != "")
+			map.put("userName", user.getUserName());
+		List<User> result = usermapper.queryUserByPage(map);
+		PageRetDto<User> response = new PageRetDto<User>();
+		response.setResult("success");
+		response.setData(result);
+		pager.setRecTotal(usermapper.queryUserCount(user));
+		response.setPagerdto(pager);
+		return response;
 	}
 
 	@Override
@@ -109,12 +123,6 @@ public class UserServiceImpl implements UserService {
 			}
 		}
 		return ret;
-	}
-
-	@Override
-	public Long userPageCount(User user) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }
